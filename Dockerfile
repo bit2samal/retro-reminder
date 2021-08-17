@@ -7,3 +7,4 @@ RUN sed -i 's/80/${PORT}/g' /etc/apache2/sites-available/000-default.conf /etc/a
 
 RUN a2enmod rewrite
 RUN composer install
+RUN php artisan migrate --force

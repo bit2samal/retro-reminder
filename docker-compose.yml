@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+    container_name: laravel-breeze
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 84:80

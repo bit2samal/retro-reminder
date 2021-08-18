@@ -7,4 +7,3 @@ RUN a2enmod rewrite
 COPY . .
 
 RUN composer install
-RUN php artisan migrate --force
